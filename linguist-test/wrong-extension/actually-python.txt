@@ -1,0 +1,7 @@
+class DataProcessor:
+    def __init__(self, config):
+        self.config = config
+    
+    def run(self):
+        for item in self.config.get("items", []):
+            yield self.transform(item)

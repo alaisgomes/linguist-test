@@ -1,0 +1,8 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PRO-COBOL-EXAMPLE.
+      * Pro*COBOL with embedded SQL
+       PROCEDURE DIVISION.
+           EXEC SQL
+               SELECT NAME INTO :WS-NAME FROM USERS
+           END-EXEC.
+           STOP RUN.
